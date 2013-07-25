@@ -1,0 +1,8 @@
+.bundle/
+.rbenv-*
+log/*.log
+pkg/
+test/dummy/
+test/dummy/
+test/dummy/
+test/dummy/
