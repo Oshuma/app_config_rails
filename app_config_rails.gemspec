@@ -17,7 +17,9 @@ Gem::Specification.new do |s|
 
   s.license = 'MIT'
 
-  s.files = Dir["{app,config,db,lib,spec}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.require_paths = ["lib"]
+  s.files = `git ls-files`.split("\n")
+  s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   s.add_dependency "app_config", "~> 2.3.1"
   s.add_dependency "rails", "~> 3.2.13"
